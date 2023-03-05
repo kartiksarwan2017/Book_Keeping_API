@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('./config/mongoose.js');
-const port = 8000;
+const dotenv = require('dotenv').config();
+const port = process.env.PORT || 8000;
 const app = express();
 
 // middle for parse form data

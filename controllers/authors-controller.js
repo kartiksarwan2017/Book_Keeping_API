@@ -1,6 +1,12 @@
 const AuthorModel = require('../models/authors');
 
-// http://localhost:8000/authors
+/* 
+Route           /authors/all-authors
+Description 	Get the list of all authors
+Access          PUBLIC
+Methods         GET
+*/
+// http://localhost:8000/authors/all-authors
 module.exports.getAllAuthors = async (req, res) => {
 
     const getAllAuthors = await AuthorModel.find();
@@ -10,7 +16,14 @@ module.exports.getAllAuthors = async (req, res) => {
 }
 
 
-// http://localhost:8000/author-id/1
+/* 
+Route           /authors/author-id/id
+Description 	Get specific author from list of all authors
+Access          PUBLIC
+Parameter       id
+Methods         GET
+*/
+// http://localhost:8000/authors/author-id/id
 module.exports.getSpecificAuthor =  async (req, res) => {
 
     const { id } = req.params;
@@ -27,7 +40,14 @@ module.exports.getSpecificAuthor =  async (req, res) => {
 
 
 
-// http://localhost:8000/author-isbn/12345ONE
+/* 
+Route           /authors/author-isbn/isbn
+Description 	Get specific authors from list of all authors
+Access          PUBLIC
+Parameter       isbn
+Methods         GET
+*/
+// http://localhost:8000/authors/author-isbn/isbn
 module.exports.getSpecificAuthors = async (req, res) => {
 
     const { isbn } = req.params;
@@ -42,8 +62,13 @@ module.exports.getSpecificAuthors = async (req, res) => {
 
 }
 
-
-// http://localhost:8000/author
+/* 
+Route           /authors/add-new-author
+Description 	Add New Author
+Access          PUBLIC
+Methods         POST 
+*/
+// http://localhost:8000/authors/add-new-author
 module.exports.addNewAuthor =  async (req, res) => {
 
     const addNewAuthor = await AuthorModel.create(req.body);
@@ -57,8 +82,14 @@ module.exports.addNewAuthor =  async (req, res) => {
 
 }
 
-
-// http://localhost:8000/author-update/1
+/* 
+Route           /authors/author-update/id
+Description 	Update the author of the book
+Access          PUBLIC
+Parameter       id
+Methods         PUT
+*/
+// http://localhost:8000/authors/author-update/id
 module.exports.updateAuthor =  async (req, res) => {
 
     const { id } = req.params;
@@ -74,7 +105,15 @@ module.exports.updateAuthor =  async (req, res) => {
 
 }
 
-// http://localhost:8000/author-delete/1
+
+/* 
+Route           /authors/author-delete/id
+Description 	Delete the Author
+Access          PUBLIC
+Parameter       id
+Methods         DELETE
+*/
+// http://localhost:8000/authors/author-delete/id
 module.exports.deleteAuthor =  async (req, res) => {
 
     const { id } = req.params;
@@ -89,8 +128,14 @@ module.exports.deleteAuthor =  async (req, res) => {
     });
 }
 
-
-// http://localhost:8000/author-books-delete/1/12345ONE
+/* 
+Route           /authors/author-books-delete/id/isbn
+Description 	Delete the author from the book
+Access          PUBLIC
+Parameter       id, isbn
+Methods         DELETE 
+*/
+// http://localhost:8000/authors/author-books-delete/id/isbn
 module.exports.authorBooksDelete =  async (req, res) => {
 
     const { id, isbn } = req.params;

@@ -4,25 +4,25 @@ const publicationsController = require('../controllers/publications-controller')
 const router = express.Router();
 
 
-// http://localhost:8000/publications
-router.get('/publications', publicationsController.getAllPublications);
+// http://localhost:8000/publications/all-publications
+router.get('/all-publications', publicationsController.getAllPublications);
 
-// http://localhost:8000/publication-id/1
+// http://localhost:8000/publications/publication-id/id
 router.get('/publication-id/:id', publicationsController.getSpecificPublication);
 
-// http://localhost:8000/publication-isbn/12345ONE
+// http://localhost:8000/publications/publication-isbn/isbn
 router.get('/publication-isbn/:isbn', publicationsController.getSpecificPublications);
 
-// http://localhost:8000/publication
-router.post('/publication', publicationsController.addNewPublication);
+// http://localhost:8000/publications/add-new-publication
+router.post('/add-new-publication', publicationsController.addNewPublication);
 
-// http://localhost:8000/publication-update/1
+// http://localhost:8000/publications/publication-update/id
 router.put('/publication-update/:id', publicationsController.updatePublication);
 
-// http://localhost:8000/publication-delete/1
+// http://localhost:8000/publications/publication-delete/id
 router.delete('/publication-delete/:id', publicationsController.deletePublication);
 
-// http://localhost:8000/publication-books-delete/1/12345ONE
+// http://localhost:8000/publications/publication-books-delete/id/isbn
 router.delete('/publication-books-delete/:id/:isbn', publicationsController.publicationBooksDelete);
 
 

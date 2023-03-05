@@ -1,6 +1,13 @@
 const PublicationModel = require('../models/publications');
 
-// http://localhost:8000/publications
+
+/* 
+Route           /publications/all-publications
+Description 	Get the list of all publications
+Access          PUBLIC
+Methods         GET
+*/
+// http://localhost:8000/publications/all-publications
 module.exports.getAllPublications =  async (req, res) => {
 
     const getAllPublications = await PublicationModel.find();
@@ -10,8 +17,14 @@ module.exports.getAllPublications =  async (req, res) => {
 }
 
 
-
-// http://localhost:8000/publication-id/1
+/* 
+Route           /publications/publication-id/id
+Description 	Get specific publication details
+Access          PUBLIC
+Parameter       id
+Methods         GET
+*/
+// http://localhost:8000/publications/publication-id/id
 module.exports.getSpecificPublication =  async (req, res) => {
 
     const { id } = req.params;
@@ -29,8 +42,14 @@ module.exports.getSpecificPublication =  async (req, res) => {
 }
 
 
-
-// http://localhost:8000/publication-isbn/12345ONE
+/* 
+Route           /publications/publication-id/isbn
+Description 	Get specific publication details 
+Access          PUBLIC
+Parameter       isbn
+Methods         GET
+*/
+// http://localhost:8000/publications/publication-isbn/isbn
 module.exports.getSpecificPublications =  async (req, res) => {
 
     const { isbn } = req.params;
@@ -47,8 +66,14 @@ module.exports.getSpecificPublications =  async (req, res) => {
 
 }
 
-
-// http://localhost:8000/publication
+/* 
+Route           /publications/add-new-publication
+Description 	Add a new publication
+Access          PUBLIC
+Parameter       isbn
+Methods         POST
+*/
+// http://localhost:8000/publications/add-new-publication
 module.exports.addNewPublication = async (req, res) => {
 
     const addNewPublication = await PublicationModel.create(req.body);
@@ -62,8 +87,14 @@ module.exports.addNewPublication = async (req, res) => {
 
 }
 
-
-// http://localhost:8000/publication-update/1
+/* 
+Route           /publications/publication-update/id
+Description 	Update the publication details
+Access          PUBLIC
+Parameter       id
+Methods         PUT
+*/
+// http://localhost:8000/publications/publication-update/id
 module.exports.updatePublication =  async (req, res) => {
 
     const { id } = req.params;
@@ -77,8 +108,14 @@ module.exports.updatePublication =  async (req, res) => {
 
 }
 
-
-// http://localhost:8000/publication-delete/1
+/* 
+Route           /publications/publication-delete/id
+Description 	Delete specific publication details
+Access          PUBLIC
+Parameter       id
+Methods         DELETE
+*/
+// http://localhost:8000/publications/publication-delete/id
 module.exports.deletePublication =  async (req, res) => {
 
     const { id } = req.params;
@@ -94,7 +131,14 @@ module.exports.deletePublication =  async (req, res) => {
 
 }
 
-// http://localhost:8000/publication-books-delete/1/12345ONE
+/* 
+Route           /publications/publication-books-delete/id/isbn
+Description 	Delete the ISBN of Book from the Publications Details
+Access          PUBLIC
+Parameter       id, isbn
+Methods         DELETE
+*/
+// http://localhost:8000/publications/publication-books-delete/id/isbn
 module.exports.publicationBooksDelete =  async (req, res) => {
 
     const { id, isbn } = req.params;

@@ -1,6 +1,12 @@
 const BookModel = require('../models/books');
 
-// http://localhost:8000/books
+/* 
+Route           /books/all-books
+Description 	Get the list of all books
+Access          PUBLIC
+Methods         GET
+*/
+// http://localhost:8000/books/all-books
 module.exports.getAllBooks = async (req, res) => {
 
     const getAllBooks = await BookModel.find();
@@ -10,7 +16,14 @@ module.exports.getAllBooks = async (req, res) => {
 }
 
 
-// http://localhost:8000/book-isbn/12345ONE
+/* 
+Route           /books/book-isbn/isbn
+Description 	Get the specific book details 
+Access          PUBLIC
+Parameter       isbn
+Methods         GET
+*/
+// http://localhost:8000/books/book-isbn/isbn
 module.exports.getSpecificBook =  async (req, res) => {
 
     const { isbn } = req.params;
@@ -26,8 +39,14 @@ module.exports.getSpecificBook =  async (req, res) => {
 }
 
 
-
-// http://localhost:8000/book-category/programming
+/* 
+Route           /books/book-category/category
+Description 	Get list of all books details based on book category
+Access          PUBLIC
+Parameter       category
+Methods         GET
+*/
+// http://localhost:8000/books/book-category/category
 module.exports.getSpecificBooks = async (req, res) => {
 
     const { category } = req.params;
@@ -45,6 +64,14 @@ module.exports.getSpecificBooks = async (req, res) => {
 
 }
 
+/* 
+Route           /books/add-new-book
+Description 	add a new book
+Access          PUBLIC
+Parameter       category
+Methods         POST
+*/
+// http://localhost:8000/books/add-new-book
 module.exports.addNewBook = async (req, res) => {
 
     const addNewBook = await BookModel.create(req.body);
@@ -57,7 +84,14 @@ module.exports.addNewBook = async (req, res) => {
 }
 
 
-// http://localhost:8000/book-update/123Two
+/* 
+Route           /books/book-update/isbn
+Description 	Update the Book details
+Access          PUBLIC
+Parameter       isbn
+Methods         PUT
+*/
+// http://localhost:8000/books/book-update/isbn
 module.exports.updateBook = async (req, res) => {
 
     const { isbn } = req.params;
@@ -71,7 +105,14 @@ module.exports.updateBook = async (req, res) => {
 
 }
 
-// http://localhost:8000/book-delete/123Two
+/* 
+Route           /books/book-delete/isbn
+Description 	Delete the book details
+Access          PUBLIC
+Parameter       isbn
+Methods         DELETE
+*/
+// http://localhost:8000/books/book-delete/isbn
 module.exports.deleteBook = async (req, res) => {
 
     console.log(req.params);
@@ -89,8 +130,14 @@ module.exports.deleteBook = async (req, res) => {
     });
 }
 
-
-// http://localhost:8000/book-author-delete/12345ONE/1
+/* 
+Route           /books/book-author-delete/isbn/id
+Description 	Delete the Author from the book 
+Access          PUBLIC
+Parameter       isbn, id
+Methods         DELETE
+*/
+// http://localhost:8000/books/book-author-delete/isbn/id
 module.exports.deleteBookAuthor =  async (req, res) => {
 
     const { isbn, id } = req.params;

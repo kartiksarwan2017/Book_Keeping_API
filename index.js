@@ -8,9 +8,15 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(express.json());
 
-
 app.use('/', require('./routes'));
 
-app.listen(8000, () => {
-    console.log('My Express app is running');
+
+app.listen(8000, (err) => {
+
+    if(err){
+        console.log(`Error while running express server: ${err}`);
+        return;
+    }
+    
+    console.log(`Express Server is running on port: ${port}`);
 });

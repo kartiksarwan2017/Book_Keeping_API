@@ -280,6 +280,9 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 ### Delete Book Details:
 <img src="/screenshots/deleteBook.PNG">
 
+### Delete Book Details:
+<img src="/screenshots/deleteBook.PNG">
+
 ### Add New Author:
 <img src="/screenshots/addNewAuthor.PNG">
 

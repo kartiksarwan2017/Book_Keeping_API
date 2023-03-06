@@ -299,7 +299,7 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 <img src="/screenshots/updateAuthorDetails.PNG">
 
 ### Delete Author:
-<img src="/screenshots/deleteAuthor.PNG">
+<img src="/screenshots/DeleteAuthor.PNG">
 
 ### Delete the Book ISBN from Author:
 <img src="/screenshots/deleteISBNfromAuthor.PNG">
@@ -318,10 +318,10 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 <img src="/screenshots/updatePublicationDetails.PNG">
 
 ### Delete Publication:
-<img src="/screenshots/deletePublication.PNG">
+<img src="/screenshots/DeletePublication.PNG">
 
 ### Delete Book ISBN from Publication:
-<img src="/screenshots/deleteISBNofbookfrompublication.PNG">
+<img src="/screenshots/DeleteISBNofbookfrompublication.PNG">
 
 
 <br/>

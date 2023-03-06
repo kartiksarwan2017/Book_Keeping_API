@@ -3,7 +3,7 @@ const authorsController = require('../controllers/authors-controller');
 
 const router = express.Router();
 
-// http://localhost:8000/authors/authors
+// http://localhost:8000/authors/all-authors
 router.get('/all-authors', authorsController.getAllAuthors);
 
 // http://localhost:8000/authors/author-id/id
@@ -12,7 +12,7 @@ router.get('/author-id/:id', authorsController.getSpecificAuthor);
 // http://localhost:8000/authors/author-isbn/isbn
 router.get('/author-isbn/:isbn', authorsController.getSpecificAuthors);
 
-// http://localhost:8000/authors/author
+// http://localhost:8000/authors/add-new-author
 router.post('/add-new-author', authorsController.addNewAuthor);
 
 // http://localhost:8000/authors/author-update/id

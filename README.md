@@ -10,9 +10,8 @@ using Express, Nodejs, MongoDB.
 
 ## Important Link:
 
-- **Youtube Video URL**: https://youtu.be/U9jCoAZ93MM
-- **Hosting Link**: https://polling-system-api-517c.onrender.com/
-- **Sample Postman Documentation Link**: https://documenter.getpostman.com/view/9062378/2s8YevqB89
+- **Hosting Link**: https://book-keeping-api.onrender.com
+- **Sample Postman Documentation Link**: https://documenter.getpostman.com/view/9062378/2s8YevqB85
 
 <br/>
 

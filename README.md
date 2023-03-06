@@ -259,29 +259,66 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 
 <p align="justify">
    
-### Create Question:    
-<img src="/screenshots/CreateQuestion.PNG">
-<img src="/screenshots/CreateQuestion2.PNG">
+### Home Page:    
+<img src="/screenshots/HomePage.PNG">
    
-### Add options to a question:
-<img src="/screenshots/AddOptions.PNG">
+### Add new book:
+<img src="/screenshots/addNewBook.PNG">
    
-### Add a vote to an option of question:    
-<img src="/screenshots/AddVotestoOption.PNG">
+### Get All Books:
+<img src="/screenshots/getAllBooks.PNG">
 
-### Delete a question:
+### Get Specific Book:
+<img src="/screenshots/GetSpecificBook.PNG">
 
-<img src="/screenshots/DeleteQuestion.PNG">
-<img src="/screenshots/DeleteQuestion_1.PNG">
+### Get Specific Books:
+<img src="/screenshots/getSpecificBooks.PNG">
 
-### Delete an option:
+### Update Book Details:
+<img src="/screenshots/updateBook.PNG">
 
-<img src="/screenshots/OptionDelete_1.PNG">
-<img src="/screenshots/DeleteOption1.PNG">
+### Delete Book Details:
+<img src="/screenshots/deleteBook.PNG">
 
-### View a question with it’s options and all the votes given to it:
+### Add New Author:
+<img src="/screenshots/addNewAuthor.PNG">
 
-<img src="/screenshots/ViewQuestionAndItsOptions.PNG">
+### Get All Authors:
+<img src="/screenshots/getAllAuthors.PNG">
 
-</p>
+### Get Specific Author:
+<img src="/screenshots/getSpecificAuthor.PNG">
+
+### Get Specific Authors:
+<img src="/screenshots/getSpecificAuthors.PNG">
+
+### Update Author Details:
+<img src="/screenshots/updateAuthorDetails.PNG">
+
+### Delete Author:
+<img src="/screenshots/deleteAuthor.PNG">
+
+### Delete the Book ISBN from Author:
+<img src="/screenshots/deleteISBNfromAuthor.PNG">
+
+### Add New Publication:
+<img src="/screenshots/addNewPublication.PNG">
+
+### Get All Publications:
+<img src="/screenshots/getAllPublication.PNG">
+
+### Get Specific Publications:
+<img src="/screenshots/getSpecificPublications.PNG">
+
+
+### Update Publication:
+<img src="/screenshots/updatePublicationDetails.PNG">
+
+### Delete Publication:
+<img src="/screenshots/deletePublication.PNG">
+
+### Delete Book ISBN from Publication:
+<img src="/screenshots/deleteISBNofbookfrompublication.PNG">
+
+
 <br/>

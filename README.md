@@ -103,19 +103,16 @@ Here `id` will be unique because every publication will have its own id. `books`
 - **/books/book-delete/isbn**
   <p> To delete the book by filtering books using id: </p>
   https://book-keeping-api.onrender.com/books/book-delete/isbn
-  <br/>
 
-  - **/books/book-author-delete/isbn/id**
+- **/books/book-author-delete/isbn/id**
   <p> To delete id of author from the book details by fitering the books using ISBN and authors using id: </p>
   https://book-keeping-api.onrender.com/books/book-author-delete/isbn/id
 
-  <br />
-
- - **/authors/add-new-author**
+- **/authors/add-new-author**
    <p> To add a new author of the book: </p>
    https://book-keeping-api.onrender.com/authors/add-new-author
 
-  - **/authors/all-authors**
+- **/authors/all-authors**
   <p> To get the list of all authors: </p>
   https://book-keeping-api.onrender.com/authors/all-authors
 
@@ -123,11 +120,11 @@ Here `id` will be unique because every publication will have its own id. `books`
   <p> To get the specific author details by filtering the author using id: </p>
   https://book-keeping-api.onrender.com/authors/author-id/id
 
-  - **/authors/author-isbn/isbn**
+- **/authors/author-isbn/isbn**
   <p> To get the List of all authors by filtering authors using ISBN of book: </p>
   https://book-keeping-api.onrender.com/authors/author-isbn/isbn
 
-  - **/authors/author-update/id**
+- **/authors/author-update/id**
   <p> To update the author details of the book: </p>
   https://book-keeping-api.onrender.com/authors/author-update/id
 
@@ -138,8 +135,6 @@ Here `id` will be unique because every publication will have its own id. `books`
 - **/authors/author-books-delete/id/isbn**
   <p> To delete the ISBN of book from the author details by filtering the authors using id and books using ISBN: </p>
   https://book-keeping-api.onrender.com/authors/author-books-delete/id/isbn
-
-<br />
 
 - **/publications/all-publications**
   <p> To get the list of all publications details of book: </p>
@@ -170,8 +165,6 @@ Here `id` will be unique because every publication will have its own id. `books`
   https://book-keeping-api.onrender.com/publications/publication-books-delete/id/isbn
 
 <br />  
-
-
 
 ## Tools Used
 

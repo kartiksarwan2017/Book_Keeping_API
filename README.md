@@ -280,8 +280,8 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 ### Delete Book Details:
 <img src="/screenshots/deleteBook.PNG">
 
-### Delete Book Details:
-<img src="/screenshots/deleteBook.PNG">
+### Delete author id from the Book:
+<img src="/screenshots/DeleteAuthorFromBook.PNG">
 
 ### Add New Author:
 <img src="/screenshots/addNewAuthor.PNG">
@@ -308,7 +308,7 @@ Open `a/nice/path/to/a.file` then edit it with your settings. You will need:
 <img src="/screenshots/addNewPublication.PNG">
 
 ### Get All Publications:
-<img src="/screenshots/getAllPublication.PNG">
+<img src="/screenshots/getAllPublications.PNG">
 
 ### Get Specific Publications:
 <img src="/screenshots/getSpecificPublications.PNG">
